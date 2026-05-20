@@ -12,7 +12,7 @@ const DetallePersonaje = ({ personaje }) => {
             <h2>{personaje.nombre_personaje}</h2>
             {personaje.imagen ? (
                 <img
-                    src={`http://127.0.0.1:8000${personaje.imagen}`}
+                    src={personaje.imagen}
                     alt={personaje.nombre_personaje}
                     className="detalle-imagen"
                 />
